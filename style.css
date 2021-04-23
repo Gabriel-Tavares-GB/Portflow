@@ -9,32 +9,34 @@ body{
 height: 100%;
 }
 
-
-header{
-height: 10vh;
-}
- 
 .section-box{
 display: flex;
-justify-content: space-evenly ;
+justify-content: space-between ;
 align-items: center;
 height: 10vh;  
 }
-
-.title{
-            
+    
+.title{               
 font-weight: bold;
 font-size :40px ;
+margin-left: 6rem;
 }
-
+  
 .list{
 display: flex;
 justify-content: space-evenly;
 width: 552px; 
 list-style: none;
 font-size: 18px;
+margin-right: 7rem;
 }
 
+@media (max-width: 768px){
+.list{
+display:none;
+  }
+}
+    
 a{       
 color: black;
 text-decoration: underline;
@@ -42,21 +44,97 @@ text-decoration-line: none;
 transition: all .5s ;    
 }
 
-.menu-text{
-font-weight:bold ;
-font-size: 25px;     
-}
-
-      
 a:hover {
 font-weight:bold ;
 font-size: 27px;
 transform: scale(1.5); 
 }
 
+#checkbox-menu{
+position: absolute;
+opacity: 0;
+}
+       
+label{
+cursor: pointer;
+position: relative;
+display: none;
+height: 22px;
+width: 30px;
+}
+        
+@media (max-width: 600px){
+label{
+display:block;
+ }
+}
+        
+label span{
+position: absolute;
+display: block;
+height: 5px;
+width: 100%;
+border-radius: 30px;
+background: #f16234;
+transition: 0.25s ease-in-out;
+}
+          
+label span:nth-child(1){
+top: 0;
+}
+          
+label span:nth-child(2){
+top: 8px;
+}
+        
+label span:nth-child(3){
+top: 16px;
+}
+        
+#checkbox-menu:checked + label span:nth-child(1){
+transform: rotate(-45deg);
+top: 8px;
+}
+        
+#checkbox-menu:checked + label span:nth-child(2){
+opacity: 0;
+}
+        
+#checkbox-menu:checked + label span:nth-child(3){
+transform: rotate(45deg);
+top:8px;
+}
+        
+.id-image{
+background-image: url(laranja\ azul\ recorte.png);
+background-repeat: no-repeat;
+background-size: cover;
+height:780px;
+width: auto; 
+}
+
+.container-orange{
+display: flex; 
+align-items: center;
+height: 100%;
+margin-left: 5rem;
+}
+
+h2{
+font-size: 78px;
+font-style: 'Extrabold';
+color: #fff;
+}
+
+p{
+font-style: 'ligth';
+font-size: 35px;
+margin-top:3rem ;
+color: #fff;
+}
 
 .main-section{
-
+margin-top:5rem;
 display: flex;
 justify-content: center;
 }
