@@ -41,13 +41,13 @@ a{
 color: black;
 text-decoration: underline;
 text-decoration-line: none;
-transition: all .5s ;    
+   
 }
 
 a:hover {
 font-weight:bold ;
-font-size: 27px;
-transform: scale(1.2); 
+font-size: 18px;
+
 }
 
 #checkbox-menu{
@@ -110,7 +110,7 @@ background-image: url(laranja\ azul\ recorte.png);
 background-repeat: no-repeat;
 background-size: cover;
 height:780px;
-width: auto; 
+background-position-x : 84%;
 }
 
 .container-orange{
@@ -164,11 +164,48 @@ box-shadow: 0 2px 2px rgba(0,0,0,0.35);
 
 .box:hover {
 border: 10px solid black;
-transform: scale(1.1); 
+transform: scale(1); 
 box-shadow: 0 5px 15px rgba(0,0,0,0.6);
 }
        
        
 
      
-    
+footer{
+background-color: rgb(240, 234, 234) ; 
+height: 12vh;
+display: flex;
+justify-content: center;
+align-items: center ;
+margin-top: 4rem;   
+}
+
+.basebord{
+display: flex;
+width:auto ;
+}
+
+.box-footer{
+margin-left:2rem ;
+}
+
+
+.basebord-menu{
+  
+height:auto ;
+display:flex;
+align-items: center;
+margin-left: 5rem;
+}
+
+
+h6{
+font-size:20px;
+}
+
+.p-basebord{
+width: 600px;
+font-size:15px;
+margin-left: 2rem;
+color: black;
+}
